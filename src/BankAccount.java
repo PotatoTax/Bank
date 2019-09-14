@@ -4,21 +4,21 @@ public class BankAccount {
     private int number;
     private int balance;
 
-    public BankAccount(String firstName, String lastName, int number) {
+    BankAccount(String firstName, String lastName, int number) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.number = number;
         balance = 0;
     }
 
-    public BankAccount(String firstName, String lastName, int number, int balance) {
+    BankAccount(String firstName, String lastName, int number, int balance) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.number = number;
         this.balance = balance;
     }
 
-    public BankAccount(String string) {
+    BankAccount(String string) {
         String[] info = string.split("-");
         firstName = info[0];
         lastName = info[1];
@@ -26,7 +26,7 @@ public class BankAccount {
         balance = Integer.parseInt(info[3]);
     }
 
-    public String getFirstName() {
+    String getFirstName() {
         return firstName;
     }
 
@@ -34,7 +34,7 @@ public class BankAccount {
         this.firstName = firstName;
     }
 
-    public String getLastName() {
+    String getLastName() {
         return lastName;
     }
 
@@ -42,7 +42,7 @@ public class BankAccount {
         this.lastName = lastName;
     }
 
-    public int getNumber() {
+    int getNumber() {
         return number;
     }
 
@@ -50,7 +50,7 @@ public class BankAccount {
         this.number = number;
     }
 
-    public int getBalance() {
+    int getBalance() {
         return balance;
     }
 
@@ -68,7 +68,7 @@ public class BankAccount {
                 '}';
     }
 
-    public String forFile()
+    String forFile()
     {
         return firstName + "-" +
                 lastName + "-" +

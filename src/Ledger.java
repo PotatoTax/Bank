@@ -6,12 +6,12 @@ public class Ledger
 {
     private ArrayList<BankAccount> accounts;
 
-    public Ledger()
+    Ledger()
     {
         accounts = new ArrayList<>();
     }
 
-    public void allAccounts()
+    void allAccounts()
     {
         for (BankAccount b : accounts)
         {
@@ -51,7 +51,7 @@ public class Ledger
         }
     }
 
-    public void sortAccountsLastName()
+    void sortAccountsLastName()
     {
         for (int i = 0; i < accounts.size(); i++)
         {
@@ -124,7 +124,7 @@ public class Ledger
         }
     }
 
-    public void saveLedger() throws IOException
+    void saveLedger() throws IOException
     {
         BufferedWriter writer = new BufferedWriter(new FileWriter("BankData.txt"));
         for (BankAccount b : accounts)
@@ -135,7 +135,7 @@ public class Ledger
         writer.close();
     }
 
-    public void loadLedger() throws FileNotFoundException
+    void loadLedger() throws FileNotFoundException
     {
         File file = new File("BankData.txt");
         Scanner scanner = new Scanner(file);
