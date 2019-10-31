@@ -7,8 +7,8 @@ public class BankGui {
 
     private BankGui() {
         Ledger ledger = new Ledger();
-        tabbedPane1.add(new BankMainPanel(ledger).rootPanel);
-        tabbedPane1.add(new BankStatsPanel().rootPanel);
+        tabbedPane1.add(new BankMainPanel(ledger).getRootPanel());
+        tabbedPane1.add(new BankStatsPanel().getRootPanel());
     }
 
     public static void main(String[] args) {

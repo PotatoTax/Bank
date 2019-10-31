@@ -1,9 +1,13 @@
 import javax.swing.*;
 
 public class BankStatsPanel {
-    JPanel rootPanel;
+    private JPanel rootPanel;
 
     BankStatsPanel() {
         rootPanel.setName("Stats");
+    }
+
+    public JPanel getRootPanel() {
+        return rootPanel;
     }
 }

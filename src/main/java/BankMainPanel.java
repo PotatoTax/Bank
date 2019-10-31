@@ -10,7 +10,7 @@ public class BankMainPanel {
     private JButton refreshButton;
     private JTable accountsTable;
     private JFormattedTextField idField;
-    JPanel rootPanel;
+    private JPanel rootPanel;
 
     private Ledger ledger;
 
@@ -96,5 +96,9 @@ public class BankMainPanel {
         tableModel.addColumn("Balance", balances);
 
         accountsTable.setModel(tableModel);
+    }
+
+    public JPanel getRootPanel() {
+        return rootPanel;
     }
 }
